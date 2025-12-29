@@ -8,30 +8,30 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Genera un código interno de referencia para los pedidos de WooCommerce y lo muestra en el panel de administración.
+Generates an internal reference code for WooCommerce orders and displays it in the administration panel.
 
 == Description ==
 
-Este plugin añade un código interno de referencia a cada pedido de WooCommerce cuando se crea un nuevo pedido.
+This plugin adds an internal reference code to each WooCommerce order when a new order is created.
 
-El código se genera con el formato:
+The code is generated in the format:
 
 CMP-{ORDER_ID}-{YYYY}
 
-y se guarda como metadato del pedido. Posteriormente se muestra en la pantalla de edición del pedido en el panel de administración de WooCommerce como un campo de solo lectura claramente etiquetado.
+and is saved as order metadata. It is then displayed on the order editing screen in the WooCommerce administration panel as a clearly labeled read-only field.
 
 == Features ==
 
-* Generación automática de código interno al crear el pedido.
-* Formato: CMP-{ORDER_ID}-{YYYY}.
-* Guardado en el metadato del pedido (`_company_reference_code`).
-* Visualización en la pantalla de edición del pedido en el admin de WooCommerce.
-* Hook de filtro para modificar el código generado desde otros plugins.
+* Automatic internal code generation when creating the order.
+* Format: CMP-{ORDER_ID}-{YYYY}.
+* Saved in the order metadata (`_company_reference_code`).
+* Displayed on the order editing screen in the WooCommerce admin.
+* Filter hook to modify the generated code from other plugins.
 
 == Installation ==
 
-1. Asegúrate de tener instalado y activo WooCommerce.
-2. Sube la carpeta `company-order-metadata` al directorio `/wp-content/plugins/`.
-3. Activa el plugin desde el menú **Plugins** de WordPress.
-4. Crea un nuevo pedido desde la tienda.
-5. Revisa el pedido en **WooCommerce → Pedidos → Editar** para ver el código interno.
+1. Make sure WooCommerce is installed and active.
+2. Upload the `company-order-metadata` folder to the `/wp-content/plugins/` directory.
+3. Activate the plugin from the **Plugins** menu in WordPress.
+4. Create a new order from the store.
+5. Review the order in **WooCommerce → Orders → Edit** to see the internal code.
